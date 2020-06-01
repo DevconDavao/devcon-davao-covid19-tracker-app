@@ -1,8 +1,22 @@
+# DevCon Davao Project - Covid19 Tracker APP
+
+![GitHub](https://img.shields.io/github/license/DevconDavao/-devcon-davao-covid19-tracker-app)
+[![js-standard-style](https://img.shields.io/badge/code%20style-react%2Frecommended-green)](https://github.com/yannickcr/eslint-plugin-react)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+## Contributing
+
+Before you start contributing please see [CONTRIBUTING.MD](https://github.com/DevconDavao/devcon-davao-covid19-tracker-app/blob/master/CONTRIBUTING.md) for our guidelines.
 
 ## Getting Started
 
-First, run the development server:
+First, copy `.env.tpl` and rename it to `.env`. Please note that some env variables have default values and some may not please set them as needed.
+
+Second, do `npm install` to install the project dependencies.
+
+Then run the development server:
 
 ```bash
 npm run dev
