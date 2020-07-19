@@ -111,7 +111,7 @@ export default function Carousel() {
             onClick={handleNext}
             disabled={activeStep === maxSteps - 1}
           >
-            Next
+            {/* Next */}
             {theme.direction === 'rtl' ? (
               <KeyboardArrowLeft />
             ) : (
@@ -126,7 +126,7 @@ export default function Carousel() {
             ) : (
               <KeyboardArrowLeft />
             )}
-            Back
+            {/* Back */}
           </Button>
         }
       />

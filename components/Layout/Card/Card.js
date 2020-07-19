@@ -13,7 +13,7 @@ import Box from '@material-ui/core/Box';
 const useStyles = makeStyles(theme => ({
   root: {
     zIndex: 1,
-    width: '100%',
+    width: '90%',
     minHeight: '400px',
     padding: '2rem 4rem 1rem 4rem',
     marginBottom: '2rem',
@@ -78,13 +78,13 @@ export default function SimpleCard(props) {
           {data.hospital}
         </Typography>
         <Grid container spacing={3} style={{ padding: '0 5%' }}>
-          <Grid item xs={12} lg={6}>
+          <Grid item xs={12} lg={6} s={12}>
             <Grid container direction="row" spacing={2}>
               <Grid item xs={5} lg={6} justify="center">
                 <Paper className={classes.paper} elevation={0}>
                   <p className={classes.subtitle}>Total Cases</p>
                   <p className={classes.subvalue}>
-  New Cases: <strong>{data.new_cases}</strong>
+                    New Cases: <strong>{data.new_cases}</strong>
                   </p>
                 </Paper>
               </Grid>
@@ -95,13 +95,14 @@ export default function SimpleCard(props) {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item xs={12} lg={6}>
+          <Grid item xs={12} lg={6} s={12}>
             <Grid container direction="row" spacing={2}>
               <Grid item xs={5} lg={6} justify="center">
                 <Paper className={classes.paper} elevation={0}>
                   <p className={classes.subtitle}>Recoveries</p>
                   <p className={classes.subvalue}>
-  New recoveries reported: <strong>{data.new_recoveries}</strong>
+                    New recoveries reported:{' '}
+                    <strong>{data.new_recoveries}</strong>
                   </p>
                 </Paper>
               </Grid>
@@ -122,7 +123,7 @@ export default function SimpleCard(props) {
                 <Paper elevation={0} className={classes.paper} elevation={0}>
                   <p className={classes.secsubtitle}>Suspects</p>
                   <p className={classes.secsubvalue}>
-  New suspects reported: <strong>{data.new_suspects}</strong>
+                    New suspects reported: <strong>{data.new_suspects}</strong>
                   </p>
                 </Paper>
               </Grid>
@@ -145,7 +146,7 @@ export default function SimpleCard(props) {
               </Grid>
               <Grid item xs={6} justify="center">
                 <Paper className={classes.paper} elevation={0}>
-  <h1 className={classes.secvalue}>{data.active_cases}</h1>
+                  <h1 className={classes.secvalue}>{data.active_cases}</h1>
                 </Paper>
               </Grid>
             </Grid>
@@ -156,7 +157,7 @@ export default function SimpleCard(props) {
                 <Paper className={classes.paper} elevation={0}>
                   <p className={classes.secsubtitle}>Deaths</p>
                   <p className={classes.secsubvalue}>
-  New deaths: <strong>{data.new_deaths}</strong>
+                    New deaths: <strong>{data.new_deaths}</strong>
                   </p>
                 </Paper>
               </Grid>

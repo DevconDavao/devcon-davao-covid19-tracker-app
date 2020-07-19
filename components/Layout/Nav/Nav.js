@@ -23,21 +23,22 @@ const useStyles = makeStyles(theme => ({
     width: '100%',
   },
   logo: {
-    width: '2em',
-    marginRight: '1rem'
+    width: 76,
+    height: 38,
+    marginRight: '1rem',
   },
   navigation: {
     display: 'none',
     [theme.breakpoints.up('sm')]: {
       display: 'block',
-    }
+    },
   },
   menuButton: {
     marginRight: theme.spacing(2),
     display: 'block',
     [theme.breakpoints.up('sm')]: {
       display: 'none',
-    }
+    },
   },
   title: {
     // display: 'none',
@@ -65,9 +66,9 @@ const useStyles = makeStyles(theme => ({
     [theme.breakpoints.up('sm')]: {
       marginLeft: theme.spacing(3),
       width: 'auto',
-      display: 'block'
+      display: 'block',
     },
-    display: 'none'
+    display: 'none',
   },
   searchIcon: {
     padding: theme.spacing(0, 2),
@@ -190,8 +191,8 @@ export default function Nav() {
   return (
     <div className={classes.grow}>
       <AppBar position="static">
-        <Toolbar style={{ padding: '0 5%', backgroundColor: '#1FA665'}}>
-          < IconButton
+        <Toolbar style={{ padding: '0 5%', backgroundColor: '#1FA665' }}>
+          <IconButton
             edge="start"
             className={classes.menuButton}
             color="inherit"
@@ -199,14 +200,18 @@ export default function Nav() {
           >
             <MenuIcon />
           </IconButton>
-          <img className={classes.logo} src="./devcon.png" />
+          <img className={classes.logo} src="./logo.png" />
           <Typography className={classes.title} variant="h6" noWrap>
             DevCon App
           </Typography>
           <div className={classes.grow}>
             <div className={classes.navigation}>
-              <Button href="/Dashboard" style={{color:'white'}}>Dashboard</Button>
-              <Button href="/About" style={{color:'white'}}>About</Button>
+              <Button href="/" style={{ color: 'white' }}>
+                Dashboard
+              </Button>
+              <Button href="/About" style={{ color: 'white' }}>
+                About
+              </Button>
             </div>
           </div>
           <div className={classes.search}>
@@ -250,7 +255,9 @@ export default function Nav() {
                 </IconButton>
               </>
             ) : (
-              <Button variant="contained" className={classes.loginBtn}>Login</Button>
+              <Button variant="contained" className={classes.loginBtn}>
+                Login
+              </Button>
             )}
           </div>
           <div className={classes.sectionMobile}>
