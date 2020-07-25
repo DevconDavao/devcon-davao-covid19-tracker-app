@@ -80,7 +80,7 @@ export default function SimpleCard(props) {
         <Grid container spacing={3} style={{ padding: '0 5%' }}>
           <Grid item xs={12} lg={6} s={12}>
             <Grid container direction="row" spacing={2}>
-              <Grid item xs={5} lg={6} justify="center">
+              <Grid item xs={5} lg={6}>
                 <Paper className={classes.paper} elevation={0}>
                   <p className={classes.subtitle}>Total Cases</p>
                   <p className={classes.subvalue}>
@@ -88,7 +88,7 @@ export default function SimpleCard(props) {
                   </p>
                 </Paper>
               </Grid>
-              <Grid item xs={7} lg={6} justify="center">
+              <Grid item xs={7} lg={6}>
                 <Paper className={classes.paper} elevation={0}>
                   <h1 className={classes.value}>{data.total_cases}</h1>
                 </Paper>
@@ -97,7 +97,7 @@ export default function SimpleCard(props) {
           </Grid>
           <Grid item xs={12} lg={6} s={12}>
             <Grid container direction="row" spacing={2}>
-              <Grid item xs={5} lg={6} justify="center">
+              <Grid item xs={5} lg={6}>
                 <Paper className={classes.paper} elevation={0}>
                   <p className={classes.subtitle}>Recoveries</p>
                   <p className={classes.subvalue}>
@@ -106,7 +106,7 @@ export default function SimpleCard(props) {
                   </p>
                 </Paper>
               </Grid>
-              <Grid item xs={7} lg={6} justify="center">
+              <Grid item xs={7} lg={6}>
                 <Paper className={classes.paper} elevation={0}>
                   <h1 className={classes.value}>{data.total_recoveries}</h1>
                 </Paper>
@@ -119,7 +119,7 @@ export default function SimpleCard(props) {
         <Grid container spacing={3}>
           <Grid item xs={4}>
             <Grid container direction="row" spacing={2}>
-              <Grid item xs={6} justify="center">
+              <Grid item xs={6}>
                 <Paper elevation={0} className={classes.paper} elevation={0}>
                   <p className={classes.secsubtitle}>Suspects</p>
                   <p className={classes.secsubvalue}>
@@ -127,7 +127,7 @@ export default function SimpleCard(props) {
                   </p>
                 </Paper>
               </Grid>
-              <Grid item xs={6} justify="center">
+              <Grid item xs={6}>
                 <Paper className={classes.paper} elevation={0}>
                   <h1 className={classes.secvalue}>{data.total_suspects}</h1>
                 </Paper>
@@ -136,7 +136,7 @@ export default function SimpleCard(props) {
           </Grid>
           <Grid item xs={4}>
             <Grid container direction="row" spacing={2}>
-              <Grid item xs={6} justify="center">
+              <Grid item xs={6}>
                 <Paper className={classes.paper} elevation={0}>
                   <p className={classes.secsubtitle}>Active Cases</p>
                   <p className={classes.secsubvalue}>
@@ -144,7 +144,7 @@ export default function SimpleCard(props) {
                   </p>
                 </Paper>
               </Grid>
-              <Grid item xs={6} justify="center">
+              <Grid item xs={6}>
                 <Paper className={classes.paper} elevation={0}>
                   <h1 className={classes.secvalue}>{data.active_cases}</h1>
                 </Paper>
@@ -153,7 +153,7 @@ export default function SimpleCard(props) {
           </Grid>
           <Grid item xs={4}>
             <Grid container direction="row" spacing={2}>
-              <Grid item xs={6} justify="center">
+              <Grid item xs={6}>
                 <Paper className={classes.paper} elevation={0}>
                   <p className={classes.secsubtitle}>Deaths</p>
                   <p className={classes.secsubvalue}>
@@ -161,7 +161,7 @@ export default function SimpleCard(props) {
                   </p>
                 </Paper>
               </Grid>
-              <Grid item xs={6} justify="center">
+              <Grid item xs={6}>
                 <Paper className={classes.paper} elevation={0}>
                   <h1 className={classes.secvalue}>{data.total_deaths}</h1>
                 </Paper>

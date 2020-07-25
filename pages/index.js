@@ -60,8 +60,8 @@ export default function Home() {
 
       <main>
         {
-          data.map(e => {
-            return (<Card data={e} />)
+          data.map((e, idx) => {
+            return (<Card data={e} key={idx} />)
           })
         }
       </main>
