@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import Nav from '@/components/Layout/Nav/Nav';
-import Footer from '@/components/Layout/Footer/Footer';
+import Nav from '@/components/Layout/Nav';
+import Footer from '@/components/Layout/Footer';
 import Card from '@material-ui/core/Card';
 import { makeStyles } from '@material-ui/core/styles';
 import CardActions from '@material-ui/core/CardActions';
