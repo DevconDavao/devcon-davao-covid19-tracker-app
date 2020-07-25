@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import Nav from '../../components/Layout/Nav/Nav';
-import Footer from '../../components/Layout/Footer/Footer';
+import Nav from '@/components/Layout/Nav/Nav';
+import Footer from '@/components/Layout/Footer/Footer';
 import Card from '@material-ui/core/Card';
 import { makeStyles } from '@material-ui/core/styles';
 import CardActions from '@material-ui/core/CardActions';
@@ -11,7 +11,7 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Divider from '@material-ui/core/Divider';
 import Box from '@material-ui/core/Box';
-import { Carousel } from '../../components/Layout';
+import { Carousel } from '@/components/Layout';
 
 const useStyles = makeStyles(theme => ({
   root: {

@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Card, Nav, Footer, Carousel } from '../components/Layout';
+import { Card, Nav, Footer, Carousel } from '@/components/Layout';
 
 import './index.css'
 

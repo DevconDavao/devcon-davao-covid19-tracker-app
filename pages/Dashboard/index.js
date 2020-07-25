@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import Nav from '../../components/Layout/Nav/Nav';
-import Footer from '../../components/Layout/Footer/Footer';
+import Nav from '@/components/Layout/Nav/Nav';
+import Footer from '@/components/Layout/Footer/Footer';
 
 export default function Dashboard() {
   return (
